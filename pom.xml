@@ -19,6 +19,8 @@
         <surefire-plugin.version>3.0.0-M7</surefire-plugin.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <lombok>1.18.24</lombok>
+        <javax.persistence>2.2</javax.persistence>
     </properties>
 
     <modules>
@@ -81,8 +83,13 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.24</version>
+                <version>${lombok}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>javax.persistence-api</artifactId>
+                <version>${javax.persistence}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
